@@ -7,18 +7,18 @@
 </head>
 <body>
     <form action="" method="get" autocomplete="off">
-        <p>
+        <fieldset>
+            <legend>Kişisel Bilgiler</legend>
             <label for="firstName">Adınız</label><br />
             <input type="text" name="firstName" id="firstName" placeholder="Adınız" maxlength="5" required />
-        </p>
+        </fieldset>
         <p>
             <label for="lastName">Soyadınız</label><br />
             <input type="text" name="lastName" id="lastName" placeholder="Soyadınız" maxlength="5" value="Soyadın Şu arkadaş" readonly />
         </p>
-
         <p>
             <label for="phone">Telefon Numaranız</label><br />
-            <input type="tel" id="phone" name="phone" placeholder="Telefon numaranız" required />        
+            <input type="tel" id="phone" name="phone" placeholder="Telefon numaranız" required />
         </p>
         <p>
             <label for="email">E-posta adresiniz</label><br />
@@ -30,13 +30,25 @@
             <label for="female">Kadın</label>
             <input type="radio" id="female" name="gender" value="0" />
         </p>
-
+        <p>
+            <label for="city">Şehir</label>
+            <select id="city" name="city" multiple>
+                <option value="">Lütfen şehir seçiniz...</option>
+                <option value="34" selected>İstanbul</option>
+                <option value="6">Ankara</option>
+                <option value="35">İzmir</option>
+                <option value="1">Adana</option>
+                <option value="17">Çanakkale</option>
+                <option value="16">Bursa</option>
+            </select>
+        </p>
         <div>
             <label for="message">Mesajınız</label><br />
             <textarea name="message" id="message" cols="30" rows="5">
                 Mesajınız...
             </textarea>
         </div>
+        <input type="hidden" id="hidden" name="hidden" value="tr" />
         <button type="submit">Gönder</button>
     </form>
 </body>

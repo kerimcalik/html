@@ -1,0 +1,22 @@
+﻿p { 
+    font-size:16px;
+    color: red !important;
+    font-family: "Trebuchet MS", Verdana, 'SansSerif BoldOblique';
+}
+
+#bicimliParagraf{
+    font-weight: bolder;
+    color: pink !important;
+}
+
+.zeminRengi {
+    background-color: aqua
+}
+
+.renkDegistir{
+    color:#68b5b0;   
+}
+.divBoyut {
+    width: 250px;
+    height: 250px;    
+}
